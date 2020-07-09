@@ -1,0 +1,9 @@
+<form action="{% url 'get_weather' %}" method="get">
+    <input type="text" name="city" value="">
+    <input type="submit" value="Get Weather">
+</form>
+
+<h1>City: {{ city }}</h1>
+<h2>Temprature: {{ temprature }} &deg;C</h2>
+<h3>Humidity: {{ humidity }} %</h3>
+<img src="http://openweathermap.org/img/w/{{ icon }}.png" alt="">
